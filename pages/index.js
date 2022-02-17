@@ -19,7 +19,7 @@ export default function Index({ posts }) {
         <a className={styles.link} href="/boot">
           ~/boot
         </a>
-        <a className={styles.link} href="/root">
+        <a className={styles.link} href="/">
           ~/root
         </a>
         <a className={styles.link} href="/posts">
