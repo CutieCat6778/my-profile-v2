@@ -10,12 +10,10 @@ export default function Meta() {
       <meta name="theme-color" content="#fff" />
       <link rel="apple-touch-icon" href="https://cutiecat6778.github.io/cdn/logo/logo_192.png" />
       <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181088981-2"></script>
       <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-VH71GCJ5C5"
         />
-
         <script
           dangerouslySetInnerHTML={{
             __html: `
