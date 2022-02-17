@@ -12,7 +12,7 @@ export default function Meta() {
       <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials" />
       <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-VH71GCJ5C5"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-181088981-2"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -20,7 +20,7 @@ export default function Meta() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-VH71GCJ5C5', { page_path: window.location.pathname });
+              gtag('config', 'UA-181088981-2', { page_path: window.location.pathname });
             `,
           }}
         />
