@@ -5,12 +5,13 @@ import { MdEmail } from "react-icons/md";
 import styles from '../styles/index.module.css';
 import Typewriter from 'typewriter-effect'
 import Image from 'next/image';
-import Link from 'next/link';
+import Meta from '../components/Meta';
 
 export default function Index({ posts }) {
   return (
     <>
       <Head>
+        <Meta/>
         <title>Thinh Nguyen | Some tech gadges</title>
       </Head>
 

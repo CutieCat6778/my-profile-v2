@@ -1,0 +1,55 @@
+{
+  "name": "Thinh Nguyen | Some tech gadges",
+  "shortname": "Thinh",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Personal blog of Thinh Nguyen, a full-stack web developer!",
+  "icons": [
+    {
+      "src": "https://cutiecat6778.github.io/cdn/logo/logo_48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://cutiecat6778.github.io/cdn/logo/logo_72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://cutiecat6778.github.io/cdn/logo/logo_96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://cutiecat6778.github.io/cdn/logo/logo_144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://cutiecat6778.github.io/cdn/logo/logo_168.png",
+      "sizes": "168x168",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://cutiecat6778.github.io/cdn/logo/logo_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://cutiecat6778.github.io/cdn/logo/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "lang": "en-US",
+  "categories": ["portfolio", "profile", "personal"],
+  "theme_color": "#fff"
+}
