@@ -35,7 +35,7 @@ export default function Index({ posts }) {
               {`Hi! I'm Thinh, a web developer. Currently I'm living in Germany and learning Computer Scientist!`}
             </span>
           </div>
-          <Image src="https://cutiecat6778.github.io/cdn/pfp/pfp.jpg" height="288px" width="288px" alt="Profile Picture" />
+          <Image src="https://cutiecat6778.github.io/cdn/pfp/pfp_50.jpg" height="288px" width="288px" alt="Profile Picture" />
         </header>
         <section className={styles.section}>
           <div className={styles.container}>

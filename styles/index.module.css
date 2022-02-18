@@ -72,5 +72,7 @@ a.icon {
   header.main {
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
+    min-height: 500px;
   }
 }
