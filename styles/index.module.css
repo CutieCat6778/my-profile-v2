@@ -70,5 +70,6 @@ a.icon {
     justify-content: center;
     align-items: center;
     min-height: 500px;
+    height: auto;
   }
 }

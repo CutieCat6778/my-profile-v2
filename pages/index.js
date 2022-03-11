@@ -40,7 +40,7 @@ export default function Index({ posts }) {
             </span>
             <Status/>
           </div>
-          <Image src="https://cutiecat6778.github.io/cdn/pfp/pfp_50.jpg" height="288px" width="288px" alt="Profile Picture" />
+          <Image src="https://cutiecat6778.github.io/cdn/pfp/pfp.jpg" height="288px" width="288px" alt="Profile Picture" />
         </header>
         <section className={styles.section}>
           <div className={styles.container}>
