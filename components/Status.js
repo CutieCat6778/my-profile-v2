@@ -17,6 +17,7 @@ export default function Status() {
             }
         }
         GetData()
+        setInterval(GetData, 3 * 60 * 1000);
     })
 
     return (

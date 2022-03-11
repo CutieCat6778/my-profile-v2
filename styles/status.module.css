@@ -1,17 +1,18 @@
 div.container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 20px;
 }
 
 span.subtitle {
     font-size: 1.2rem;
-    color: gray
+    color: gray;
+    margin-bottom: -20px;
 }
 
 h1.title {
-    font-size: 1.3rem;
+    font-size: auto;
 }
 
 div.box {
@@ -21,4 +22,5 @@ div.box {
     justify-content: center;
     margin-left: 10px;
     max-height: 120px;
+    max-width: 280px;
 }
