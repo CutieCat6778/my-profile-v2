@@ -1,7 +1,7 @@
 export default function Meta() {
   return (
     <>
-      <meta charset="utf-8" />
+      <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel='icon' href="https://cutiecat6778.github.io/cdn/logo/logo_96.png" />
       <meta name="author" content="Thinh Nguyen" />
@@ -9,7 +9,7 @@ export default function Meta() {
       <meta name="keywords" content="thinh, thinh's blog, blog, thinh blog, thinh nguyen blog, personal blog,portfolio, txzje, thinh nguyen, profile, thinh, vietnam" />
       <meta name="theme-color" content="#fff" />
       <link rel="apple-touch-icon" href="https://cutiecat6778.github.io/cdn/logo/logo_192.png" />
-      <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials" />
+      <link rel="manifest" href="./manifest.webmanifest" crossOrigin="use-credentials" />
       <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-181088981-2"

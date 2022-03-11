@@ -1,0 +1,6 @@
+div.divider {
+    background-color: rgb(170, 170, 170);
+    width: 100%;
+    height: 1px;
+    margin-top: -20px;
+}

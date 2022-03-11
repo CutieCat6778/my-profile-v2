@@ -6,6 +6,13 @@ import styles from '../styles/index.module.css';
 import Typewriter from 'typewriter-effect'
 import Image from 'next/image';
 import Meta from '../components/Meta';
+import Status from '../components/Status';
+import Divider from '../components/Divider';
+import BlogList from '../components/List';
+import fs from 'fs'
+import matter from 'gray-matter'
+import path from 'path'
+import { postFilePaths, POSTS_PATH } from '../utils/mdxUtils'
 
 export default function Index({ posts }) {
   return (
@@ -16,11 +23,8 @@ export default function Index({ posts }) {
       </Head>
 
       <nav className={styles.nav}>
-        <a className={styles.link} href="/boot">
-          ~/boot
-        </a>
         <a className={styles.link} href="/">
-          ~/root
+          /home/thinh
         </a>
         <a className={styles.link} href="/posts">
           ~/post
@@ -34,15 +38,16 @@ export default function Index({ posts }) {
             <span>
               {`Hi! I'm Thinh, a web developer. Currently I'm living in Germany and learning Computer Scientist!`}
             </span>
+            <Status/>
           </div>
           <Image src="https://cutiecat6778.github.io/cdn/pfp/pfp_50.jpg" height="288px" width="288px" alt="Profile Picture" />
         </header>
         <section className={styles.section}>
           <div className={styles.container}>
             <h1 className={styles.title}>
-              ~/about.txt
+              About me
             </h1>
-            <div className={styles.divider}></div>
+            <Divider/>
             <div className={styles.text}>
               <span>
                 Since I was a small child, I dreamt to a future that I will be a computer specialist. Worked very hard to achieve my goals. I've been passionate about computer scientist.
@@ -57,7 +62,18 @@ export default function Index({ posts }) {
           </div>
 
           <div className={styles.container}>
-            <div className={styles.divider}></div>
+            <h1 className={styles.title}>
+              Posts
+            </h1>
+            <Divider/>
+            <BlogList posts={posts}/>
+          </div>
+
+          <div className={styles.container}>
+          <h1 className={styles.title}>
+              Contact
+            </h1>
+            <Divider/>
             <div className={styles.contact}>
               <a href="https://instagram.com/txzje" className={styles.icon}>
                 <FaInstagramSquare />
@@ -79,3 +95,17 @@ export default function Index({ posts }) {
   )
 }
 
+export function getStaticProps() {
+  const posts = postFilePaths.map((filePath) => {
+    const source = fs.readFileSync(path.join(POSTS_PATH, filePath))
+    const { content, data } = matter(source)
+
+    return {
+      content,
+      data,
+      filePath,
+    }
+  })
+
+  return { props: { posts } }
+}
