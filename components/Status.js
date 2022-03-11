@@ -9,6 +9,7 @@ export default function Status() {
     useEffect(() => {
         async function GetData(){
             try{
+                if(data) return;
                 const res = await FetchStatus();
                 if(res) return setData(res);
                 else return console.log("Cannot get data from backend!");
@@ -17,7 +18,6 @@ export default function Status() {
             }
         }
         GetData()
-        setInterval(GetData, 3 * 60 * 1000);
     })
 
     return (
