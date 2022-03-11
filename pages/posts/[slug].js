@@ -34,6 +34,9 @@ export default function PostPage({ source, frontMatter }) {
       </header>
       <div className="post-header">
         <h1>{frontMatter.title}</h1>
+        <span>
+          {frontMatter.date}
+        </span>
         {frontMatter.description && (
           <p className="description">{frontMatter.description}</p>
         )}
